@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "286665379290",
+    "project_id": "chatapp-beb78",
+    "storage_bucket": "chatapp-beb78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286665379290:android:f00f49ae2952ae10e584e3",
+        "android_client_info": {
+          "package_name": "com.example.chatapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmvj6jSyPmT_c5hh9botv0Vb0fViIpicw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
