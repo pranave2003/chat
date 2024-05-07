@@ -1,4 +1,5 @@
 import 'package:chatapps/firebase_options.dart';
+import 'package:chatapps/pages/login.dart';
 import 'package:chatapps/services/auth/auth_gate.dart';
 import 'package:chatapps/services/auth/auth_service.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AuthGate(),
+      home: AuthGate()
     );
   }
 }

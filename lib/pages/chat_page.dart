@@ -34,7 +34,7 @@ class _ChatPageState extends State<ChatPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(backgroundColor: Colors.blue.shade50,
       appBar: AppBar(
         title: Text(widget.receiverUserEmail),
       ),
@@ -84,7 +84,7 @@ class _ChatPageState extends State<ChatPage> {
     var alignment = (data['senderId'] == _firebaseAuth.currentUser!.uid)
         ? Alignment.centerRight
         : Alignment.centerLeft;
-    return Container(
+    return Container(color: Colors.blue.shade50,
       alignment: alignment,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -94,7 +94,7 @@ class _ChatPageState extends State<ChatPage> {
                   ? CrossAxisAlignment.end
                   : CrossAxisAlignment.start,
           children: [
-            Text(data['senderEmail']),
+            Text(data['senderEmail'],style: TextStyle(color: Colors.red),),
             const SizedBox(
               height: 5,
             ),

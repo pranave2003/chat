@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,38 +41,54 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA8U57cOPrETwDRKh6rQmx3wzyZH0qBQiU',
-    appId: '1:286665379290:web:c7c705058b772fe7e584e3',
-    messagingSenderId: '286665379290',
-    projectId: 'chatapp-beb78',
-    authDomain: 'chatapp-beb78.firebaseapp.com',
-    storageBucket: 'chatapp-beb78.appspot.com',
-    measurementId: 'G-1KJYJZWCB6',
+    apiKey: 'AIzaSyDmsGnd7vz4-T_GGpCdKdL_0_v4790Cw-E',
+    appId: '1:71854392536:web:3478de769e8227c805c3ad',
+    messagingSenderId: '71854392536',
+    projectId: 'chat-e1131',
+    authDomain: 'chat-e1131.firebaseapp.com',
+    databaseURL: 'https://chat-e1131-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'chat-e1131.appspot.com',
+    measurementId: 'G-RB90DQCGW1',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCmvj6jSyPmT_c5hh9botv0Vb0fViIpicw',
-    appId: '1:286665379290:android:f00f49ae2952ae10e584e3',
-    messagingSenderId: '286665379290',
-    projectId: 'chatapp-beb78',
-    storageBucket: 'chatapp-beb78.appspot.com',
+    apiKey: 'AIzaSyAJpzIm0a4XsUGnXV3IV8XS26llM1T-hFc',
+    appId: '1:71854392536:android:e3e4c8dbe7762a7205c3ad',
+    messagingSenderId: '71854392536',
+    projectId: 'chat-e1131',
+    databaseURL: 'https://chat-e1131-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'chat-e1131.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAp52NwjpG00uFpe3VnssyZdoRRRiN2Ark',
-    appId: '1:286665379290:ios:118ff25a542392c2e584e3',
-    messagingSenderId: '286665379290',
-    projectId: 'chatapp-beb78',
-    storageBucket: 'chatapp-beb78.appspot.com',
+    apiKey: 'AIzaSyACaGpBCzh_hA0qqsJWslBEGtWIsWHM9L0',
+    appId: '1:71854392536:ios:e4f01103462f9b1605c3ad',
+    messagingSenderId: '71854392536',
+    projectId: 'chat-e1131',
+    databaseURL: 'https://chat-e1131-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'chat-e1131.appspot.com',
     iosBundleId: 'com.example.chatapps',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAp52NwjpG00uFpe3VnssyZdoRRRiN2Ark',
-    appId: '1:286665379290:ios:28e1bc1961a3f9a5e584e3',
-    messagingSenderId: '286665379290',
-    projectId: 'chatapp-beb78',
-    storageBucket: 'chatapp-beb78.appspot.com',
-    iosBundleId: 'com.example.chatapps.RunnerTests',
+    apiKey: 'AIzaSyACaGpBCzh_hA0qqsJWslBEGtWIsWHM9L0',
+    appId: '1:71854392536:ios:e4f01103462f9b1605c3ad',
+    messagingSenderId: '71854392536',
+    projectId: 'chat-e1131',
+    databaseURL: 'https://chat-e1131-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'chat-e1131.appspot.com',
+    iosBundleId: 'com.example.chatapps',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDmsGnd7vz4-T_GGpCdKdL_0_v4790Cw-E',
+    appId: '1:71854392536:web:798b80df4d3148d105c3ad',
+    messagingSenderId: '71854392536',
+    projectId: 'chat-e1131',
+    authDomain: 'chat-e1131.firebaseapp.com',
+    databaseURL: 'https://chat-e1131-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'chat-e1131.appspot.com',
+    measurementId: 'G-4FCTY9164V',
+  );
+
 }

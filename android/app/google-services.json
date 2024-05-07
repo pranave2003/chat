@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "286665379290",
-    "project_id": "chatapp-beb78",
-    "storage_bucket": "chatapp-beb78.appspot.com"
+    "project_number": "71854392536",
+    "firebase_url": "https://chat-e1131-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chat-e1131",
+    "storage_bucket": "chat-e1131.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:286665379290:android:f00f49ae2952ae10e584e3",
+        "mobilesdk_app_id": "1:71854392536:android:e3e4c8dbe7762a7205c3ad",
         "android_client_info": {
           "package_name": "com.example.chatapps"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCmvj6jSyPmT_c5hh9botv0Vb0fViIpicw"
+          "current_key": "AIzaSyAJpzIm0a4XsUGnXV3IV8XS26llM1T-hFc"
         }
       ],
       "services": {

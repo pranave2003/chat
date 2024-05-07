@@ -2,6 +2,7 @@ import 'package:chatapps/pages/chat_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 import '../services/auth/auth_service.dart';
@@ -27,12 +28,19 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Homepages"),
+        backgroundColor: Colors.blue.shade50,
+        title: Text(
+          "Chat With Friends",
+          style: GoogleFonts.risque(),
+        ),
         actions: [
           //sign out button
           IconButton(
             onPressed: signOut,
-            icon: Icon(Icons.logout),
+            icon: Icon(
+              Icons.logout,
+              color: Colors.red,
+            ),
           )
         ],
       ),
@@ -66,7 +74,8 @@ class _HomePageState extends State<HomePage> {
 
     //dispaly all users except current user
     if (_auth.currentUser!.email != data['email']) {
-      return ListTile(
+      return ListTile(iconColor: Colors.red,
+
         title: Text(data['email']),
         onTap: () {
           //pass the clicked users's UID to the chat page

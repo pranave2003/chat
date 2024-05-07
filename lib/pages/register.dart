@@ -17,6 +17,7 @@ class _RegisterState extends State<Register> {
   final emailController = TextEditingController();
   final passwordContoller = TextEditingController();
   final confirmpasswordController = TextEditingController();
+  final namecontroller = TextEditingController();
 //sign up user
   void signUp() async {
     if (passwordContoller.text != confirmpasswordController.text) {
@@ -70,6 +71,13 @@ class _RegisterState extends State<Register> {
                   ),
                   SizedBox(
                     height: 25,
+                  ),
+                  MyTextFields(
+                      controller: namecontroller,
+                      hintText: "Name",
+                      obscureText: false),
+                  SizedBox(
+                    height: 10,
                   ),
                   //email text field
                   MyTextFields(
