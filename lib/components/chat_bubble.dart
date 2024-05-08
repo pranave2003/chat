@@ -16,7 +16,7 @@ class ChatBubble extends StatelessWidget {
         message,
         style: TextStyle(
           fontSize: 16,
-          color: Colors.white, // Optional: Text color
+          color: Color.fromARGB(255, 252, 250, 250), // Optional: Text color
         ),
       ),
     );
